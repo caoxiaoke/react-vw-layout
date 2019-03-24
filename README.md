@@ -114,26 +114,27 @@ npm run start
 
 demo 版本中直接引入阿里的cdn 文件，在自己项目中可以放自己公司的服务器或者项目中。
 
-打开public/index.html，在head 中插入
+打开public/index.html，在head 中插入 viewport-units-buggyfill
 
+```html 
 <head>
     <script src="//g.alicdn.com/fdilab/lib3rd/viewport-units-buggyfill/0.6.2/??viewport-units-buggyfill.hacks.min.js,viewport-units-buggyfill.min.js"></script>
 </head>
 
-
-然后在body里面插入
 <body>
-     <script>
-          window.onload = function () {
-            window.viewportUnitsBuggyfill.init({
-              hacks: window.viewportUnitsBuggyfillHacks
-            });
-          }
-    </script>
-</body>
+<script>
+	window.onload = function () {
+		window.viewportUnitsBuggyfill.init({
+			hacks: window.viewportUnitsBuggyfillHacks
+		});
+	}
+</script>
+<body>
+``` 
 
 最后完整的index.html
 
+```html 
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -183,7 +184,7 @@ demo 版本中直接引入阿里的cdn 文件，在自己项目中可以放自�
     </script>
   </body>
 </html>
-
+``` 
 
 
 项目中有遇到的坑：
