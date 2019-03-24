@@ -115,6 +115,12 @@ npm run start
  
 浏览器会打开 http://localhost:8080/
 
+<br/>
+![Image text](https://github.com/caoxiaoke/react-vw-layout/blob/master/src/images/WX20190325-005512%402x.png)
+
+<br/>
+![Image text](https://github.com/caoxiaoke/react-vw-layout/blob/master/src/images/WX20190325-005603%402x.png)
+
 
 6、我们加入兼容我们android 低版本的机型hack 加入viewport-units-buggyfill配置
 
