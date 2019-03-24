@@ -12,26 +12,27 @@
 步骤：
 
 1、创建项目 && 初始化
-
+ ```html 
 create-react-app react-vw-layout
 
 cd react-vw-layout
-
+ ```
 
 2、开启我们的配置之路&&简单配置
 
 react 把配置都隐藏了，需要我们手动来显示配置
-
+ ```
 npm run eject
 
 //Are you sure you want to eject? This action is permanent. (y/N) y
-
+ ```
+ 
 之后可以看到 config文件 && scripts 文件夹
 
 3、安装我们需要配置用到的插件(建议使用cnpm)
-
+ ```html 
 npm install --save postcss-aspect-ratio-mini postcss-px-to-viewport postcss-write-svg postcss-cssnext postcss-viewport-units cssnano
-
+ ```
 
 
 4、开始配置
@@ -40,13 +41,15 @@ npm install --save postcss-aspect-ratio-mini postcss-px-to-viewport postcss-writ
 
 先引入postcss cssnano插件
 
+```html 
 const postcssAspectRatioMini = require('postcss-aspect-ratio-mini');
 const postcssPxToViewport = require('postcss-px-to-viewport');
 const postcssWriteSvg = require('postcss-write-svg');
 const postcssCssnext = require('postcss-cssnext');
 const postcssViewportUnits = require('postcss-viewport-units');
 const cssnano = require('cssnano');
-
+ ```
+ 
 增加postcss 配置
 
     {
@@ -103,8 +106,10 @@ const cssnano = require('cssnano');
 
 5、配置完成以后，我们可以看到vw 神奇的效果了
 
+```html 
 npm run start
-
+ ```
+ 
 浏览器会打开 http://localhost:8080/
 
 
@@ -188,7 +193,7 @@ demo 版本中直接引入阿里的cdn 文件，在自己项目中可以放自�
 
 
 项目中有遇到的坑：
-
+ ```html 
 1、cssnano 如果你的版本为：4+ 以上，请在配置中如下方案配置：
 
 cssnano({
@@ -251,5 +256,4 @@ img {
 	left: 15px;
 	z-index: 2;
 }
-
-
+ ```
