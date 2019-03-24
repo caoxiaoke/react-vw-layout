@@ -26,9 +26,10 @@ npm run eject
 
 //Are you sure you want to eject? This action is permanent. (y/N) y
  ```
- 
+ <br/>
 之后可以看到 config文件 && scripts 文件夹
 ![Image text](https://github.com/caoxiaoke/react-vw-layout/blob/master/src/images/WX20190325-003909%402x.png)
+<br/>
 3、安装我们需要配置用到的插件(建议使用cnpm)
  ```html 
 npm install --save postcss-aspect-ratio-mini postcss-px-to-viewport postcss-write-svg postcss-cssnext postcss-viewport-units cssnano
