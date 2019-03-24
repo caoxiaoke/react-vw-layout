@@ -114,11 +114,20 @@ npm run start
  ```
  
 浏览器会打开 http://localhost:8080/
+```html 
+.App {
+	background-color: bisque;
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	height: 200px;
+	width: 750px;
+}
+ ```
 
 ![Image text](https://github.com/caoxiaoke/react-vw-layout/blob/master/src/images/WX20190325-005512%402x.png)
-<br/>
-
-![Image text](https://github.com/caoxiaoke/react-vw-layout/blob/master/src/images/WX20190325-005603%402x.png)
 <br/>
 
 6、我们加入兼容我们android 低版本的机型hack 加入viewport-units-buggyfill配置
@@ -265,3 +274,8 @@ img {
 	z-index: 2;
 }
  ```
+
+
+
+![Image text](https://github.com/caoxiaoke/react-vw-layout/blob/master/src/images/WX20190325-005603%402x.png)
+<br/>
