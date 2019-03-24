@@ -32,6 +32,9 @@ npm run eject
 ![Image text](https://github.com/caoxiaoke/react-vw-layout/blob/master/src/images/WX20190325-003909%402x.png)
 <br/>
 
+<br/>
+![Image text](https://github.com/caoxiaoke/react-vw-layout/blob/master/src/images/WX20190325-005603%402x.png)
+
 3、安装我们需要配置用到的插件(建议使用cnpm)
  ```html 
 npm install --save postcss-aspect-ratio-mini postcss-px-to-viewport postcss-write-svg postcss-cssnext postcss-viewport-units cssnano
@@ -117,7 +120,6 @@ npm run start
 
 <br/>
 ![Image text](https://github.com/caoxiaoke/react-vw-layout/blob/master/src/images/WX20190325-005512%402x.png)
-
 
 6、我们加入兼容我们android 低版本的机型hack 加入viewport-units-buggyfill配置
 
