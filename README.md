@@ -277,7 +277,8 @@ img {
 }
  ```
 
-如果你不使用react 也不使用vue ，在项目中只使用html页面 vw实现移动端适配，请点这 《如何在html项目中使用vw实现移动端适配》 
+如果你不使用react 也不使用vue ，在项目中只使用html页面 vw实现移动端适配，请点这 <a href="https://github.com/caoxiaoke/html-vw-layout">《如何在html项目中使用vw实现移动端适配》</a>
+
 
 ![Image text](https://github.com/caoxiaoke/react-vw-layout/blob/master/src/images/WX20190325-005603%402x.png)
 <br/>
