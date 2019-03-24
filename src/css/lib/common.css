@@ -1,0 +1,288 @@
+/**
+ * Created by caofk on 2019/3/14.
+ */
+
+/*兼容ios不显示图片问题*/
+img {
+	content: normal !important
+}
+
+/*兼容ios不显示图片问题*/
+
+/*flexbox 常用布局方式*/
+
+/*伸缩盒子模型*/
+
+.box {
+	display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+	display: -moz-box; /* 老版本语法: Firefox (buggy) */
+	display: -ms-flexbox; /* 混合版本语法: IE 10 */
+	display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+	display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+/*从左至右*/
+
+.box-lr {
+	-webkit-box-direction: normal;
+	-webkit-box-orient: horizontal;
+	-moz-flex-direction: row;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+/*从右至左*/
+
+.box-rl {
+	-webkit-box-pack: end;
+	-webkit-box-direction: reverse;
+	-webkit-box-orient: horizontal;
+	-moz-flex-direction: row-reverse;
+	-webkit-flex-direction: row-reverse;
+	flex-direction: row-reverse;
+}
+
+/*从上至下*/
+
+.box-tb {
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+/*从下至上*/
+
+.box-bt {
+	-webkit-box-pack: end;
+	-webkit-box-direction: reverse;
+	-webkit-box-orient: vertical;
+	-moz-flex-direction: column-reverse;
+	-webkit-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+}
+
+/*主轴居中*/
+
+.box-pack-center {
+	-webkit-box-pack: center;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+/*主轴居左*/
+
+.box-pack-start {
+	-webkit-box-pack: start;
+	-moz-justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+	justify-content: flex-start;
+}
+
+/*主轴居右*/
+
+.box-pack-end {
+	-webkit-box-pack: end;
+	-moz-justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+/*主轴左右不留白*/
+
+.box-pack-between {
+	-webkit-box-pack: justify;
+	-moz-justify-content: space-between;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+}
+
+/*主轴左右留白*/
+
+.box-pack-between {
+	-moz-justify-content: space-around;
+	-webkit-justify-content: space-around;
+	justify-content: space-around;
+}
+
+/*交叉轴居中对齐*/
+
+.box-align-center {
+	-webkit-box-align: center;
+	-moz-align-items: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+/*交叉轴居左对齐*/
+
+.box-align-start {
+	-webkit-box-align: start;
+	-moz-align-items: start;
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+}
+
+/*交叉轴居右对齐*/
+
+.box-align-end {
+	-webkit-box-align: end;
+	-moz-align-items: end;
+	-webkit-align-items: flex-end;
+	align-items: flex-end;
+}
+
+/**单个指定的子元素自定义对齐方式，可以不同于其他子元素对齐方式**/
+
+/**指定子元素居中对齐**/
+
+.self-align-center {
+	align-self: center;
+	-webkit-align-self: center;
+	margin: 0 auto;
+}
+
+/**指定子元素顶部对齐**/
+
+.self-align-start {
+	align-self: flex-start;
+	-webkit-align-self: flex-start;
+}
+
+/**指定子元素底部对齐**/
+
+.self-align-end {
+	align-self: flex-end;
+	-webkit-align-self: flex-end;
+}
+
+/**指定子元素拉伸**/
+
+.self-align-stretch {
+	align-self: stretch;
+	-webkit-align-self: stretch;
+}
+
+/**子元素换行**/
+
+.box-wrap {
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+/**子元素不换行**/
+
+.box-nowrap {
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+/*允许子元素伸展（1倍）*/
+
+.flex {
+	-moz-flex-grow: 1;
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+}
+
+/*允许子元素收缩(1倍)*/
+
+.shrink {
+	-moz-flex-shrink: 1;
+	-webkit-flex-shrink: 1;
+	flex-shrink: 1;
+}
+
+/**水平居中*/
+
+.box-center-center {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	display: -moz-box;
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	text-align: center;
+}
+
+/**垂直居中*/
+
+.box-center-center-v {
+	display: -webkit-box;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	display: -moz-box;
+	-moz-box-align: center;
+	-moz-box-pack: center;
+	text-align: center;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+}
+
+/*flexbox 常用布局方式*/
+
+/*1px 解决方案*/
+
+@svg square {
+	@rect {
+		fill: var(--color, white);
+		width: 100%;
+		height: 50%;
+	}
+}
+
+.example-line {
+	width: 100%;
+	background: white svg(square param(--color #E6E6E6));
+	background-size: 100% 1px;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+/*1px 解决方案*/
+
+/*伪元素1px*/
+
+.row-cell:before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 1px;
+	border-top: 1px solid #e5e5e5;
+	color: #e5e5e5;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+	left: 15px;
+	z-index: 2;
+}
+
+.row-cell-64D26D:before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	right: 0;
+	height: 1px;
+	border-top: 1px solid #64D26D;;
+	color: #64D26D;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+	z-index: 2;
+}
+/*伪元素1px*/
+.margin-page-header {
+	margin-top: 96px;
+}

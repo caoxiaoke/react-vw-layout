@@ -1,0 +1,55 @@
+
+/*nav 导航栏*/
+
+.nav {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background: #1890ff;
+	height: 96px;
+	width: 100%;
+}
+.nav-line {
+	border: 1px solid white;
+	height: 44px;
+	width: 2px;
+	margin-right: 22px;
+	margin-left: 34px;
+	border-right: 0;
+	border-bottom: 0;
+	border-top: 0;
+}
+
+.left-arrow {
+	width: 30px;
+	height: 30px;
+	margin-left: 33px;
+}
+
+.nav-text-min-width {
+	min-width: 360px;
+}
+
+.nav-left-text {
+	font-family: DroidSansFallback;
+	font-size: 32px;
+	color: #FFFFFF;
+	line-height: 32px;
+}
+
+.right-text {
+	font-family: PingFangSC-Regular;
+	font-size: 26px;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-align: right;
+	line-height: 34px;
+	position: absolute;
+	height: 34px;
+	right: 24px;
+	top: 50%;
+	margin-top: -17px;
+}
+
+/*nav 导航栏*/
