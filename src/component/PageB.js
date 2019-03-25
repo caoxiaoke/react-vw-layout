@@ -1,6 +1,3 @@
-/**
- * Created by caofk on 2019/3/12.
- */
 import React, {Component} from 'react';
 import PageHeader from './lib/PageHeader';
 import '../App.css';
@@ -20,7 +17,7 @@ class PageB extends Component {
 	render() {
 		return (
 			<div>
-				<PageHeader closeBrowser={false} title={'Page B'}></PageHeader>
+				<PageHeader  title={'Page B'}></PageHeader>
 				<br/>
 				<br/>
 				<br/>
