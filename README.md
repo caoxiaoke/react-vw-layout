@@ -138,7 +138,8 @@ npm run start
 
 demo 版本中直接引入阿里的cdn 文件，在自己项目中可以放自己公司的服务器或者项目中。
 
-打开public/index.html，在head 中插入 viewport-units-buggyfill
+打开public/index.html，在head 中插入 viewport-units-buggyfill 和body 中使用
+
 
 ```html 
 <head>
