@@ -1,6 +1,3 @@
-/**
- * Created by caofk on 2019/3/12.
- */
 import React, {Component} from 'react';
 import PageHeader from './lib/PageHeader';
 import {NavLink} from 'react-router-dom'
@@ -19,7 +16,7 @@ class PageA extends Component {
 	render() {
 		return (
 			<div>
-				<PageHeader closeBrowser={false} title={'Page A'}></PageHeader>
+				<PageHeader  title={'Page A'}></PageHeader>
 				<div className="list">
 					<div className="list-row box box-pack-center">
 						<NavLink to="/page-b">Link-To-PageB</NavLink>
